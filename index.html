@@ -43,11 +43,13 @@
       </a>
     
       <!-- Poznámka vlevo dole -->
-      <div class="absolute bottom-6 left-6 max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">💡 Poznámka</h5>
-        <p class="text-sm text-gray-700 dark:text-gray-400">
+      <div class="absolute bottom-6 right-6 max-w-sm group rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-600 dark:bg-gray-800 transition-all duration-1000">
+        <button class="w-full cursor-pointer p-4 text-left text-lg font-bold text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          💡 Poznámka
+        </button>
+        <div class="max-h-0 opacity-0 overflow-hidden px-4 pb-4 text-sm text-gray-700 dark:text-gray-400 transition-all duration-[1200ms] ease-in-out group-hover:max-h-96 group-hover:opacity-100 group-focus-within:max-h-96 group-focus-within:opacity-100">
           V případě nejasností doporučuji nahlédnout do metodické příručky, která je součástí praktické části bakalářské práce (viz odkaz v zápatí).
-        </p>
+        </div>
       </div>
     </section>
 
@@ -59,12 +61,15 @@
         <p>V této části si ukážeme, jak jednoduše importovat vlastní prezentaci do platformy Quizizz. Video vás provede krok za krokem celým procesem nahrání souboru a jeho přípravou pro použití v hodině. Nezapomeňte vybrat v nabídce upravitelné snímky (editable slides), pro možnost jejich další úpravy.</p>
       </div>
       <!-- Poznámka vpravo dole -->
-      <div class="absolute bottom-6 right-6 max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">💡 Poznámka</h5>
-        <p class="text-sm text-gray-700 dark:text-gray-400">
-          Quizizz umožňuje nahrát prezentaci ve formátu PDF nebo Google Slides. Pokud pracujete v PowerPointu (Office), doporučujeme prezentaci nejprve exportovat do PDF formátu. Mějte prosím na paměti, že při převodu se mohou ztratit některé animace nebo interaktivní prvky, ale pro potřeby kvízu to obvykle nijak nevadí. Hlavní je, aby byl obsah přehledný a srozumitelný i bez těchto efektů.
-        </p>
+      <div class="absolute bottom-6 right-6 max-w-sm group rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-600 dark:bg-gray-800 transition-all duration-1000">
+        <button class="w-full cursor-pointer p-4 text-left text-lg font-bold text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          💡 Poznámka
+        </button>
+        <div class="max-h-0 opacity-0 overflow-hidden px-4 pb-4 text-sm text-gray-700 dark:text-gray-400 transition-all duration-[1200ms] ease-in-out group-hover:max-h-96 group-hover:opacity-100 group-focus-within:max-h-96 group-focus-within:opacity-100">
+          Quizizz umožňuje nahrát prezentaci ve formátu PDF nebo Google Slides. Pokud pracujete v PowerPointu (Office), doporučuji prezentaci nejprve exportovat do PDF formátu. Při převodu se mohou ztratit animace, ale to většinou nevadí.
+        </div>
       </div>
+      
     </section>
 
     <section id="tema2" data-next="#tema3" class="relative min-h-screen flex flex-col-reverse lg:flex-row items-center gap-8 px-8 py-20 border-b">
@@ -72,12 +77,15 @@
         <h2 class="text-2xl font-semibold mb-4">Import testu (kvízu)</h2>
         <p>V tomto videu se naučíte, jak naimportovat test do Quizizz z textového nebo excelového (.xls) souboru. Uvidíte, jak systém automaticky rozpozná otázky, zobrazí jejich náhled a jak můžete výsledný test upravit do finální podoby nebo si ho případně i vytisknout pro offline použití.</p>
       </div>
-      <div class="absolute wd:bottom-6 top-6 left-6  max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">💡 Poznámka</h5>
-        <p class="text-sm text-gray-700 dark:text-gray-400">
-          Quizizz nabízí možnost importu testových otázek z textového nebo Excel souboru – oba formáty fungují prakticky stejně. Po importu je vhodné zkontrolovat otázky v náhledu, zda byly správně rozpoznány.
-          Mějte prosím na paměti, že otevřené otázky (open-ended) nejsou ideální: systém je automaticky nevyhodnotí bez využití AI, a i tak je výsledek často potřeba ručně ověřit. Doporučujeme proto držet se uzavřených typů otázek (výběr z možností, pravda/nepravda, doplňování apod.) pro co nejhladší práci s výsledky.</p>
-      </div>
+      <!-- Poznámka vlevo nahoře -->
+      <div class="absolute top-6 left-6 max-w-sm group rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-600 dark:bg-gray-800 transition-all duration-1000">
+        <button class="w-full cursor-pointer p-4 text-left text-lg font-bold text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          💡 Poznámka
+        </button>
+        <div class="max-h-0 opacity-0 overflow-hidden px-4 pb-4 text-sm text-gray-700 dark:text-gray-400 transition-all duration-[1200ms] ease-in-out group-hover:max-h-96 group-hover:opacity-100 group-focus-within:max-h-96 group-focus-within:opacity-100">
+          Quizizz nabízí možnost importu testových otázek z textového nebo Excel souboru. Po importu je vhodné zkontrolovat otázky v náhledu, zda byly správně rozpoznány. Otevřené otázky nejsou ideální, doporučujeme uzavřené typy otázek pro snadnou práci s výsledky.
+        </div>
+      </div>  
       <iframe class="w-full lg:w-1/2 aspect-video" src="https://www.youtube.com/embed/XlaGO6PobaE?si=NFCUiPOSajHRt0fb" title="Tvorba prezentace" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>     
     </section>
 
@@ -95,12 +103,16 @@
         <h2 class="text-2xl font-semibold mb-4">Možnosti prezentace a testování</h2>
         <p>Ve následujícím videu si ukážeme různé způsoby, jak spustit a zadat připravený obsah studentům. Ukážeme si, jak odprezentovat materiál jako klasickou prezentaci nebo jak zadat test jako hravý kvíz – například s populárním režimem, kde studenti soutěží a postupně šplhají na horu.
         Podíváme se i na možnosti jako student-paced režim (každý si prochází úkol svým tempem) nebo zadání testu přes Google Classroom. Kde samozřejmě lze nastavit, jestli mají studenti jen jeden pokus, nebo si mohou úkol zkusit opakovaně.</p>
+            </div>
+      <!-- Poznámka vlevo nahoře -->
+      <div class="absolute top-6 left-6 max-w-sm group rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-600 dark:bg-gray-800 transition-all duration-1000">
+        <button class="w-full cursor-pointer p-4 text-left text-lg font-bold text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          💡 Poznámka
+        </button>
+        <div class="max-h-0 opacity-0 overflow-hidden px-4 pb-4 text-sm text-gray-700 dark:text-gray-400 transition-all duration-[1200ms] ease-in-out group-hover:max-h-96 group-hover:opacity-100 group-focus-within:max-h-96 group-focus-within:opacity-100">
+          Před zadáním doporučujeme promyslet, zda chcete klást důraz na soutěživost, výkon nebo na procvičení. Například v režimu „pouze jeden pokus“ je větší tlak na výkon, zatímco opakované pokusy podporují učení a objevování správných odpovědí.
+        </div>
       </div>
-      <div class="absolute wd:bottom-6 top-6 left-6  max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">💡 Poznámka</h5>
-        <p class="text-sm text-gray-700 dark:text-gray-400">
-          Před zadáním doporučujeme promyslet, zda chcete klást důraz na soutěživost, výkon nebo na procvičení. Například v režimu „pouze jeden pokus“ je větší tlak na výkon, zatímco opakované pokusy podporují učení a objevování správných odpovědí bez stresu. Kromě hravého šplhání na horu je dostupný mód s různými power-upy</p>
-      </div>  
       <iframe class="w-full lg:w-1/2 aspect-video" src="https://www.youtube.com/embed/UExP3iJT0ZE?si=UXbmTyY4N-GFlAX3" title="Prezentace a testování" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
   
     </section>
@@ -111,11 +123,15 @@
         <h2 class="text-2xl font-semibold mb-4">Hodnocení a výsledky</h2>
         <p>V závěrečné části si ukážeme, jak pracovat s výsledky testu v Quizizz. Dozvíte se, jak si výsledky zobrazit přímo v přehledu nebo jak je stáhnout ve formátu XLS pro další zpracování. Ukážeme si i tipy, jak s tabulkou efektivně pracovat v Excelu.</p>
       </div>
-      <div class="absolute bottom-6 right-6 max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
-        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">💡 Poznámka</h5>
-        <p class="text-sm text-gray-700 dark:text-gray-400">
-          Dejte si pozor na otevřené otázky – Quizizz je totiž automaticky označí jako správně zodpovězené, pokud nejsou ručně opraveny. Pokud výsledky upravujete v Excelu, je potřeba nejen změnit hodnocení odpovědí, ale i ručně přepsat součtové buňky (např. pomocí =SUM(...)), aby se výsledné skóre správně přepočítalo.</p>
-      </div> 
+      <!-- Poznámka vpravo nahoře --> 
+      <div class="absolute bottom-6 right-6 max-w-sm group rounded-lg border border-gray-200 bg-white shadow-sm dark:border-gray-600 dark:bg-gray-800 transition-all duration-1000">
+        <button class="w-full cursor-pointer p-4 text-left text-lg font-bold text-gray-900 dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700">
+          💡 Poznámka
+        </button>
+        <div class="max-h-0 opacity-0 overflow-hidden px-4 pb-4 text-sm text-gray-700 dark:text-gray-400 transition-all duration-[1200ms] ease-in-out group-hover:max-h-96 group-hover:opacity-100 group-focus-within:max-h-96 group-focus-within:opacity-100">
+          Pozor na otevřené otázky – Quizizz je automaticky označí jako správné, pokud je ručně neopravíte. Při exportu výsledků do Excelu je třeba přepočítat body ručně (např. pomocí <code>=SUM(...)</code>), jinak zůstane původní.
+        </div>
+      </div>   
     </section>
 
     <!-- Závěr -->
