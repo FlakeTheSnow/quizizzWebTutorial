@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quizizz Videotutoriál</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <body class="bg-white text-gray-800 font-sans scroll-smooth">
+    <div class="relative">
+      <svg class="absolute top-0 left-0 w-full h-full opacity-50 pointer-events-none z-[-1]" viewBox="0 0 1000 6000" xmlns="http://www.w3.org/2000/svg">
+        <!-- Čárkovaná cesta -->
+        <path
+          d="M 500 700
+            C 150 1000, 850 1000, 900 2000
+            C 850 3000, 150 3000, 100 4000
+            C 150 5000, 850 5000, 900 5800"
+          fill="none"
+          stroke="red"
+          stroke-width="4"
+          stroke-dasharray="12,12"
+        />
+      
+        <!-- Vlajky -->
+        <text x="500" y="700" font-size="48">🚩</text>
+        <text x="900" y="1900" font-size="48">🚩</text>
+        <text x="100" y="4000" font-size="48">🚩</text>
+
+        <!-- Konec -->
+        <text x="870" y="5828" font-size="56">❌</text>
+      </svg>
+      
+    <!-- Hero Sekce -->
+    <section id="hero" class="relative min-h-screen flex flex-col justify-center items-center text-center bg-gray-50 p-8 bg-opacity-75">
+      <h1 class="text-4xl font-bold mb-4">Videotutoriál k práci s platformou Quizizz</h1>
+      <p class="text-lg max-w-2xl mb-6">
+        Tento videotutoriál vám krok za krokem ukáže, jak efektivně pracovat s platformou Quizizz pro vytváření interaktivních prezentací a testů.
+        V pěti tematických sekcích si ukážeme jak importovat prezentaci nebo test, přidávání různých gamifikovaných prvků, zadávání testů nebo práci s výsledky.
+      </p>
+      <a href="#tema1" class="bg-indigo-600 text-white px-6 py-3 rounded-xl text-lg hover:bg-indigo-700 transition scroll-link">
+        Začínáme!
+      </a>
+    
+      <!-- Poznámka vlevo dole -->
+      <div class="absolute bottom-6 left-6 max-w-sm p-4 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-700">
+        <h5 class="mb-2 text-lg font-bold tracking-tight text-gray-900 dark:text-white">💡 Poznámka</h5>
+        <p class="text-sm text-gray-700 dark:text-gray-400">
+          V případě nejasností doporučuji nahlédnout do metodické příručky, která je součástí praktické části bakalářské práce (viz odkaz v zápatí).
+        </p>
+      </div>
+    </section>
+
+    <!-- Tématické sekce -->
+    <section id="tema1" data-next="#tema2" class="relative min-h-screen flex flex-col lg:flex-row items-center gap-8 px-8 py-20 border-b ">
+      <iframe class="w-full lg:w-1/2 aspect-video" src="https://www.youtube.com/embed/w7cCFMkrheo?si=zVeHWWF5KOUKmprJ" title="Úvod do Quizizz" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <div class="lg:w-1/2">
+        <h2 class="text-2xl font-semibold mb-4">Úvod do Quizizz</h2>
+        <p>V tomto videu se seznámíte se základy platformy Quizizz, přihlášením, orientací v prostředí a hlavními funkcemi, které platforma nabízí.</p>
+      </div>
+    </section>
+
+    <section id="tema2" data-next="#tema3" class="relative min-h-screen flex flex-col-reverse lg:flex-row items-center gap-8 px-8 py-20 border-b">
+      <div class="lg:w-1/2">
+        <h2 class="text-2xl font-semibold mb-4">Tvorba prezentace</h2>
+        <p>Jak vytvořit prezentaci s interaktivními prvky? Podívejte se na postup tvorby slide-based výuky, možnosti layoutů a práce s objekty.</p>
+      </div>
+      <iframe class="w-full lg:w-1/2 aspect-video" src="https://www.youtube.com/embed/XlaGO6PobaE?si=NFCUiPOSajHRt0fb" title="Tvorba prezentace" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>     
+    </section>
+
+    <section id="tema3" data-next="#tema4" class="relative min-h-screen flex flex-col lg:flex-row items-center gap-8 px-8 py-20 border-b">
+      <iframe class="w-full lg:w-1/2 aspect-video" src="https://www.youtube.com/embed/rgSYiHLfoB4?si=j3vqo4cSRWiva9W3" title="Tvorba testu" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <div class="lg:w-1/2">
+        <h2 class="text-2xl font-semibold mb-4">Tvorba testu</h2>
+        <p>Zjistěte, jak vypadá prostředí pro testování, proč je vhodné používat uzavřené otázky a jak připravit tisknutelnou verzi testu.</p>
+      </div>   
+    </section>
+
+    <section id="tema4" data-next="#tema5" class="relative min-h-screen flex flex-col-reverse lg:flex-row items-center gap-8 px-8 py-20 border-b">
+      <div class="lg:w-1/2">
+        <h2 class="text-2xl font-semibold mb-4">Možnosti prezentace a testování</h2>
+        <p>Rozdíl mezi živou prezentací a přiřazeným úkolem, jak fungují různé režimy, gamifikace, časovače a další nástroje během prezentace nebo testu.</p>
+      </div>
+      <iframe class="w-full lg:w-1/2 aspect-video" src="https://www.youtube.com/embed/UExP3iJT0ZE?si=UXbmTyY4N-GFlAX3" title="Prezentace a testování" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>    
+    </section>
+
+    <section id="tema5" class="relative min-h-screen flex flex-col lg:flex-row items-center gap-8 px-8 py-20 border-b">
+      <iframe class="w-full lg:w-1/2 aspect-video" src="https://www.youtube.com/embed/I9Y0w12isR0?si=mRWZJalKX6qvd0mE" title="Hodnocení a výsledky" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      <div class="lg:w-1/2">
+        <h2 class="text-2xl font-semibold mb-4">Hodnocení a zpráva výsledků</h2>
+        <p>Prozkoumejte, jak stáhnout výsledky ve formátu Excel, sdílet výsledky e-mailem, nebo je propojit s Google Classroom.</p>
+      </div>
+    </section>
+
+    <!-- Závěr -->
+    <footer class="text-center py-10 px-4 bg-gray-100">
+      <p class="text-sm text-gray-500">&copy; 2025 Igor Vujovič | Videotutoriál k metodické příručce pro platformu Quizizz</p>
+      <p class="text-sm text-gray-500">Vytvořeno jako součást bakalářské práce: <a class="font-medium text-blue-600 dark:text-blue-500 hover:underline!" href="https://is.cuni.cz/studium/dipl_st/index.php?doo=detail&did=273737">Interaktivní internetové prezentace s gamifikovanou formou testování a jejich využítí</a></p>
+    </footer>
+
+    <!-- Scroll Arrow -->
+    <a id="next-arrow"
+    href="#"
+    class="fixed bottom-6 left-1/2 -translate-x-1/2 md:left-auto md:right-6 md:translate-x-0 z-50 text-gray-700 hover:text-black transition hidden scroll-link">
+    <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 animate-bounce" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+    </svg>
+    </a>
+  </div>
+  </body>
+  <script src="main.js"></script>
+</html>
+
